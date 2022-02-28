@@ -44,7 +44,7 @@ Maquette de la page d’accueil :
  
 Maquette de la page d’accueil une fois connecté : 
  
-Front 
+Front :
 ▪ Navbar avec redirection sur les différentes pages du site 
 ▪ Carroussel de film 
 ▪ Affichage des films par catégorie 
