@@ -1,13 +1,10 @@
-# metropolis
-   
-METROPOLIS 
-PROJET FIL ROUGE 
+  # METROPOLIS PROJET FIL ROUGE 
  
  
   
 APPEL D’OFFRE CINEMET 
    
-OBJECTIF 
+# OBJECTIF 
 Réalisation d’un site complet VOD 
 CADRE 
 Le  Métropolis  de  Charleville-Mézières  souhaite  réaliser  un  nouveau 
@@ -17,7 +14,7 @@ du projet car celui-ci est en vacances de l’autre côté du monde.
 Vous êtes donc libre de faire et proposer ce que vous souhaitez tout 
 en respectant bien évidemment les demandes du porteur de projet. 
 
-LIVRABLE ATTENDU 
+# LIVRABLE ATTENDU 
 
 Réaliser un site internet respectant les attentes du  porteur de projet 
 en un temps minimum.  
@@ -25,7 +22,7 @@ Chaque compétence validée sur ce projet n’aura pas à être validé à
 nouveau sur un futur projet fil rouge ! Faite donc de votre mieux pour 
 répondre aux attentes de votre chef de projet. 
 
-LIVRABLE DETAILLÉ 
+# LIVRABLE DETAILLÉ 
 
 Listing du livrable à respecter : 
 ▪ Le Métropolis souhaite un site dont le contenu est accessible 
