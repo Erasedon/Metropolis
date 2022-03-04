@@ -14,7 +14,7 @@ body{
 /*fond de la page */
 .fondcolor {
     background-color:#000000;
-    height: 500vh;
+    
 }
 
 /*fond de la page */
@@ -30,7 +30,8 @@ body{
     box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
     color: whitesmoke;
     z-index: 999;
-    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: "Merriweather", serif;
+  
 }
 
 #nav-logo {
@@ -72,10 +73,14 @@ body{
 
 /* test navbar  */
 
+#nav-links1{
+    position: absolute;
+    left: 0;
+}
 #nav-links1 ul {
     margin: 0;
     padding: 0;
-    margin-left: -500;
+     
     margin-right: 35px;
     display: flex;
 }
@@ -96,6 +101,30 @@ body{
     color: orange;
 }
 
+
+#nav-links2 ul {
+    margin: 0;
+    padding: 0;
+    margin-right: 30px;
+    display: flex;
+}
+
+#nav-links2 li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#nav-links2 li a {
+    text-decoration: none;
+    
+    padding: 1rem;
+    display: block;
+    color: rgb(255, 123, 0);
+}
+
+#nav-links2 a:hover {
+    color: rgb(255, 102, 0);
+}
 /* test navbar  */
 
 /* Nav Burger */
@@ -135,12 +164,52 @@ body{
     transition: .5s ease-in-out;
 }
 @media (max-width: 900px) {
+    #nav-links2 {
+        display: none;
+    }
         #nav-links1 {
             margin: 0;
             padding: 0;
-            margin-left: -10%;
+            margin-left: 0%; 
+            position: relative;
+            display: none;
+        } 
+        #nav-logo {
+            visibility: visible;
+            position: relative;
+            top: 0;
+            right: 300px;
+            transform: translateX(405%);
+            transition: transform 5s ease-out;
+        }
+    
+        #nav-toggle-button {
             display: flex;
         }
+    
+        #nav-links {
+            display: none;
+        }
+    
+        #navbar {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        #nav-links ul {
+            width: 100%;
+            flex-direction: column;
+        }
+    
+        #nav-links li {
+            text-align: center;
+        }
+    
+        #nav-links li a {
+            padding: .5rem 1rem;
+        }
+
+      
 }
 @media (max-width: 600px) {
 
@@ -150,7 +219,7 @@ body{
         top: 0;
         right: 300px;
         transform: translateX(405%);
-        transition: transform 5s ease-out;
+        transition: transform 3s ease-out;
     }
 
     #nav-toggle-button {
@@ -214,11 +283,12 @@ body{
     padding: 3%;
 }
 
-#taille{
+.taille{
     width: 100%;
     height:100%;   
     object-fit: contain;
 }
+
 
 .newscontainer {
     display: flex;
@@ -230,6 +300,7 @@ body{
     margin: 41px;
     padding: 5%;
     border-radius: 2px;
+   
 }
 .containerimgtext {
     margin: 40px;
@@ -238,11 +309,14 @@ body{
 
 .titre{
     font-size: 45px;
+    margin-bottom:20px;
+    font-family: "Merriweather", serif;
 }
 .justtext{
         text-align: center; 
         font-size: 30px;
-        margin-bottom:60px;
+        margin-bottom:10px;
+        font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,'sans-s';
     }
 
 .inputs{
@@ -284,7 +358,7 @@ body{
         display: flex;
         flex-direction: column;
         color: whitesmoke;
-        width: 80%; 
+        width: 82%; 
         justify-content: center;
         align-items: center;
         padding: 0%;
@@ -294,6 +368,7 @@ body{
         margin:0px;
         
     }
+ 
 }
 
 /*Code optionproject*/
@@ -309,9 +384,232 @@ body{
     top: -20%;
 }
 /*Code gridimg*/
-
 .gridimg{
-
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+        
+    .div1 { grid-area: 1 / 1 / 2 / 2; background-image: url(../img/pexels-olenka-sergienko-3646172.jpg);  }
+    .div2 { grid-area: 1 / 2 / 2 / 3;  background-image: url(../img/pexels-olenka-sergienko-3646172.jpg);  }
+    .div3 { grid-area: 1 / 3 / 2 / 4;   background-image: url(../img/pexels-olenka-sergienko-3646172.jpg);}
+    .div4 { grid-area: 1 / 4 / 2 / 5;  background-image: url(../img/pexels-olenka-sergienko-3646172.jpg);   }
+    .div5 { grid-area: 1 / 5 / 2 / 6;  background-image: url(../img/pexels-olenka-sergienko-3646172.jpg);  }
+    .div6 { grid-area: 2 / 1 / 3 / 2;  background-image: url(../img/pexels-olenka-sergienko-3646172.jpg);  }
+    .div7 { grid-area: 2 / 1 / 3 / 2;  background-image: url(../img/pexels-olenka-sergienko-3646172.jpg);  }
+    .div8 { grid-area: 2 / 1 / 2 / 2;  background-image: url(../img/pexels-olenka-sergienko-3646172.jpg);  }
+    .div9 { grid-area: 2 / 2 / 3 / 3;  background-image: url(../img/pexels-olenka-sergienko-3646172.jpg);  }
+    .div10 { grid-area: 2 / 3 / 3 / 4;  background-image: url(../img/pexels-olenka-sergienko-3646172.jpg);  }
+    .div11 { grid-area: 2 / 4 / 3 / 5;  background-image: url(../img/pexels-olenka-sergienko-3646172.jpg);  }
+    .div12 { grid-area: 2 / 5 / 3 / 6;  background-image: url(../img/pexels-olenka-sergienko-3646172.jpg);  }
+    .div13 { grid-area: 3 / 1 / 4 / 2;  background-image: url(../img/pexels-olenka-sergienko-3646172.jpg);   }
+    .div14 { grid-area: 3 / 2 / 4 / 3;  background-image: url(../img/pexels-olenka-sergienko-3646172.jpg);  }
+    .div15 { grid-area: 3 / 3 / 4 / 4;  background-image: url(../img/pexels-olenka-sergienko-3646172.jpg);  }
+    .div16 { grid-area: 3 / 4 / 4 / 5;  background-image: url(../img/pexels-olenka-sergienko-3646172.jpg);  }
+    .div17 { grid-area: 3 / 5 / 4 / 6;  background-image: url(../img/pexels-olenka-sergienko-3646172.jpg);  }
+    .div18 { grid-area: 4 / 1 / 5 / 2; background-image: url(../img/pexels-olenka-sergienko-3646172.jpg);   }
+    .div19 { grid-area: 4 / 2 / 5 / 3;  background-image: url(../img/pexels-olenka-sergienko-3646172.jpg);  }
+    .div20 { grid-area: 4 / 3 / 5 / 4;  background-image: url(../img/pexels-olenka-sergienko-3646172.jpg);  }
+    .div21 { grid-area: 4 / 4 / 5 / 5;  background-image: url(../img/pexels-olenka-sergienko-3646172.jpg);  }
+    .div22 { grid-area: 4 / 5 / 5 / 6;  background-image: url(../img/pexels-olenka-sergienko-3646172.jpg);  }
+    
+    .tailleaffiche{
+    width: 100%;
+    height:32.8em;
+    background-repeat: no-repeat;   
+    background-size: cover;
 }
 
 /*Code gridimg*/
+/* perperctive */
+
+.imgcoter {
+
+    /* transform: perspective(302px) rotateY(-4deg) rotateX(7deg) !important;
+    transform-origin: top; */
+    transform: perspective(185px) rotateX(2deg) rotateY(-1deg);
+    transform-origin: top;
+    transform-style: preserve-3d;
+}
+
+
+.shadow {
+   /* -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+   background: linear-gradient(#e66465, #9198e5); */
+   opacity:0.25 ;
+}
+/*footer*/
+
+footer {
+    font-size: 16px;
+    background: var(--footer-bg);
+    padding: 2em 4em;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 1em;
+    color:#ffff;
+  }
+  
+  footer ul {
+    list-style: none;
+  }
+  
+  .col {
+    flex: 1;
+  }
+  
+  .col-title {
+    font-family: "Merriweather", serif;
+    color: var(--color);
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 0.5em 0;
+  }
+  
+  .col-list a {
+    color: var(--color-smooth);
+    text-decoration: none;
+    line-height: 1.4;
+    font-weight: 400;
+  }
+  
+  .col-list a:hover,
+  .col-list a:focus {
+    text-decoration: underline;
+  }
+  
+  
+  /*footer*/
+
+/*  parallax*/
+.keyart, .keyart_layer {
+    height: 773px;
+  }
+  
+  #parallax {
+    display: block;
+  }
+  
+  .keyart {
+    position: relative;
+  
+  }
+  
+  .keyart_layer {
+    background-position: bottom center;
+    background-size: auto 840px;
+    background-repeat: repeat-x;
+    width: 100%;
+    position: absolute;
+  }
+  
+  .keyart_layer.parallax {
+    position: fixed;
+  
+  }
+  
+  #keyart-0 {
+    background-image: url("../img/parallax/parallax0.png");
+    background-color: #ffaf1b;
+    z-index: -1;
+  }
+  
+  #keyart-1 {
+    background-image: url("../img/parallax/parallax1.png");
+    
+  }
+  
+  #keyart-2 {
+    background-image: url("../img/parallax/parallax2photoshop.png");
+  }
+  
+  #keyart-3 {
+    background-image: url("../img/parallax/parallax3.png");
+  }
+  
+  #keyart-4 {
+    background-image: url("../img/parallax/parallax4.png");
+  }
+  
+  #keyart-5 {
+    background-image: url("../img/parallax/parallax5.png");
+  }
+  
+  #keyart-6 {
+    background-image: url("../img/parallax/parallax6.png");
+  }
+  
+  #keyart-7 {
+    background-image: url("../img/parallax/parallax7.png");
+  }
+  
+  #keyart-8 {
+    background-image: url("../img/parallax/parallax8.png");
+  }
+  
+  #keyart-scrim {
+    background-color: #ffaf00;
+    opacity: 0;
+  }
+  
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    #keyart-0 {
+      background-image: url("http://www.firewatchgame.com/images/parallax/parallax0@2x.png");
+      background-color: #ffaf1b;
+    }
+  
+    #keyart-1 {
+      background-image: url("http://www.firewatchgame.com/images/parallax/parallax1@2x.png");
+    }
+  
+    #keyart-2 {
+      background-image: url("http://www.firewatchgame.com/images/parallax/parallax2@2x.png");
+    }
+  
+    #keyart-3 {
+      background-image: url("http://www.firewatchgame.com/images/parallax/parallax3@2x.png");
+    }
+  
+    #keyart-4 {
+      background-image: url("http://www.firewatchgame.com/images/parallax/parallax4@2x.png");
+    }
+  
+    #keyart-5 {
+      background-image: url("http://www.firewatchgame.com/images/parallax/parallax5@2x.png");
+    }
+  
+    #keyart-6 {
+      background-image: url("http://www.firewatchgame.com/images/parallax/parallax6@2x.png");
+    }
+  
+    #keyart-7 {
+      background-image: url("http://www.firewatchgame.com/images/parallax/parallax7@2x.png");
+    }
+  
+    #keyart-8 {
+      background-image: url("http://www.firewatchgame.com/images/parallax/parallax8@2x.png");
+    }
+  }
+  /* paralax*/
+
+  .overflow{ 
+    overflow: hidden;
+ 
+  }
+
+  #textvideo {
+    position: absolute;
+    color: white;
+    place-content: center;
+    font-size: 5em;
+    height: 100%;
+    display: grid;
+    width: 100%;
+    font-family: "Merriweather", serif;
+    z-index: 999;
+}

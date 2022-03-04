@@ -45,13 +45,13 @@ window.addEventListener('click', function(e){
 
 //window size
 window.addEventListener('resize', function(){
-    if (window.innerWidth > 600){
+    if (window.innerWidth > 900){
         navLinks.style.display = "flex"
         navLinks1.style.display = "flex"
         navBar.style.borderBottomLeftRadius = "0px"
         navBar.style.borderBottomRightRadius = "0px"
     }
-    if (window.innerWidth < 600){
+    if (window.innerWidth < 900){
         navLinks.style.display = "none"
         navLinks1.style.display = "none"
         toggleButton.classList.remove('open-hamburger')

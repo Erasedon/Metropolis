@@ -10,6 +10,11 @@
                 <li><a href="contact.php">Inscription</a></li>
             </ul>
         </div>
+        <div id="nav-links2">
+           <ul>
+                <li><a href="index.php">Metropolis</a></li>
+            </ul>
+        </div>
         <div id="nav-links"> 
             
             <ul>
