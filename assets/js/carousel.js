@@ -23,6 +23,7 @@ class carousel {
         slidesVisible: 1,
         loop: true,
         pagination: false,
+        i:0,
         navigation: true
       }, options)
       let children = [].slice.call(element.children)
@@ -205,18 +206,20 @@ class carousel {
   
   }
   
-  let onReady = function () {
-  
-    while(){
-    var  i = i+1;
-      new carousel(document.querySelector(`#carousel1`), {
+  let onReady = function (i) {
+
+    var i=0;
+    
+    
+      new carousel(document.querySelector("#carousel1"), {
       slidesVisible: 2,
       slidesToScroll: 2,
       pagination: true,
       loop: true
     })
-    }
-    
+     
+     var  i = i++;
+    console.log(i);
  
   
   }
