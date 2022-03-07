@@ -1,5 +1,4 @@
 <footer class="footer" id="6">
-
   <span class="col">
     <h3 class="col-title">Info</h3>
     <nav class="col-list">
@@ -35,3 +34,4 @@
       </ul>
     </nav>
   </span>
+</footer>
