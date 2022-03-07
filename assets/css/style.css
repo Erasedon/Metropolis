@@ -681,28 +681,52 @@ body {
 /* code connexion style*/
 
 /* Pen Title */
- .pen-title {
+ #pen-title {
 	 padding: 50px 0;
 	 text-align: center;
 	 letter-spacing: 2px;
+   display: block;
    
 }
- .pen-title h1 {
+ #pen-title h1 {
 	 margin: 0 0 20px;
 	 font-size: 48px;
    color: rgb(255, 123, 0);
 	 font-weight: 300;
 }
- .pen-title span {
+ #pen-title span {
 	 font-size: 12px;
 }
- .pen-title span .fa {
+ #pen-title span .fa {
 	 color:rgb(255, 100, 0);
 }
- .pen-title span a {
+ #pen-title span a {
 	 color: rgb(255, 100, 0);
 	 font-weight: 600;
 	 text-decoration: none;
+}
+#pen-title2 {
+  padding: 50px 0;
+  text-align: center;
+  letter-spacing: 2px;
+  display:none;
+}
+#pen-title2 h1 {
+  margin: 0 0 20px;
+  font-size: 48px;
+  color: rgb(255, 123, 0);
+  font-weight: 300;
+}
+#pen-title2 span {
+  font-size: 12px;
+}
+#pen-title2 span .fa {
+  color:rgb(255, 100, 0);
+}
+#pen-title2 span a {
+  color: rgb(255, 100, 0);
+  font-weight: 600;
+  text-decoration: none;
 }
 /* Rerun */
  .rerun {
@@ -783,7 +807,7 @@ body {
 }
  .container.active .card.alt .toggle {
   position: absolute;
-  top: 239px;
+  top: 280px;
   right: 98px;
   box-shadow: none;
   transform: scale(10);
@@ -973,6 +997,22 @@ body {
 }
  .card .footer a:hover {
   color: rgb(255, 100, 0);
+}
+.card.alt .footeri {
+  margin: 40px 0 35px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  position: sticky;
+}
+.card.alt .footeri a {
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.card.alt .footeri a:hover {
+ color: #000;
 }
  .card.alt {
 	 position: absolute;
@@ -1483,3 +1523,92 @@ footer ul {
 
 }
 /*page film*/
+
+/* rester connecter*/
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  display: none;
+}
+
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 85px;
+  padding-top: 2px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before,
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '';
+  position: absolute;
+}
+
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  width: 65px; 
+  height: 30px;
+  background: rgb(158, 66, 5);
+  border-radius: 15px;
+  left: 0; 
+  top: -3px;
+  transition: all .2s ease;
+}
+
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  width: 10px; 
+  height: 10px;
+  background: rgba(255,255,255,.7);
+  border-radius: 50%;
+  top: 7px; 
+  left: 10px;
+  transition: all .2s ease;
+}
+
+/* on checked */
+[type="checkbox"]:checked + label:before {
+  background: #000; 
+}
+
+[type="checkbox"]:checked + label:after {
+  background: rgb(255, 95, 0);
+  top: 7px; 
+  left: 45px;
+}
+
+[type="checkbox"]:checked + label .ui,
+[type="checkbox"]:not(:checked) + label .ui:before,
+[type="checkbox"]:checked + label .ui:after {
+  position: absolute;
+  left: 6px;
+  width: 65px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 22px;
+  transition: all .2s ease;
+}
+
+[type="checkbox"]:not(:checked) + label .ui:before {
+  content: "no";
+  left: 32px;
+  top:2px;
+  color:#ffffff;
+}
+
+[type="checkbox"]:checked + label .ui:after {
+  content: "yes";
+  top:15px;
+  color: #ffffff;
+}
+
+[type="checkbox"]:focus + label:before {
+  box-sizing: border-box;
+  margin-top: -1px;
+}
+/*rester connecter*/

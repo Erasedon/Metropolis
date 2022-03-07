@@ -1,49 +1,71 @@
-<div class="d-flex justify-content-center ">
-    <FORM action="contact.php" method="post" class="w-50 p-3 ">
-        <div class="form-group">
-            <label for="exampleInputEmail1" class="text-white">Nom</label>
-            <input type="text" class="form-control" placeholder="Entrez nom en majuscules" name="Nom" required>
-        </div>
-        <div class="form-group">
-            <label for="exampleInputEmail1" class="text-white">Prenom</label>
-            <input type="text" class="form-control" placeholder="Entrez prénom" name="Prenom" required>
-        </div>
-        <div class="form-group">
-            <label for="exampleInputEmail1" class="text-white">Adresse Mail</label>
-            <input id="mail1" type="email" class="form-control " placeholder="Entrez email" onchange="DoubleCheck()"
-                name="Mail" required>
-        </div>
-        <div class="form-group">
-            <label for="exampleInputEmail1 " class="text-white">Confirmer Adresse Mail</label>
-            <input id="mail2" type="email" class="form-control" placeholder="Entrez email" onchange="DoubleCheck()"
-                onpaste required>
-        </div>
-        <div class="form-group">
-            <label for="exampleInputEmail1" class="text-white">Téléphone(optionnel)</label>
-            <input type="tel" class="form-control"
-                placeholder="Entrez numéro de téléphone , Il sera utilsé pour des besoins urgents (stage, document manquant, etc)"
-                name="Tel">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputEmail1" class="text-white">Mot de passe (minimum : 8 caractères, 1 majuscule, 1 minuscule, 1
-                chiffre)</label>
-            <input id="mdp1" type="password" class="form-control" placeholder="Entrez Mot de passe"
-                onchange="DoubleCheck()" name="Mdp"
-                pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
-        </div>
 
-        <div class="form-group">
-            <label for="exampleInputEmail1" class="text-white">Confirmer mot de passe</label>
-            <input id="mdp2" type="password" class="form-control" placeholder="Entrez Mot de passe"
-                onchange="DoubleCheck()" required>
-        </div>
-        <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-            <label class="form-check-label text-white" for="exampleCheck1">J'ai pris connaissance de mes droits d'accès de
-                rectification et de suppression de mes données à caractère personnel</label>
-        </div>
-
-        <input type="Submit"  value="S'enregister" id="submit" disabled>
-    </FORM>
+<div id="pen-title2">
+  <h1>Connexion Metropolis</h1>
 </div>
+<div id="pen-title">
+  <h1>Inscription Metropolis</h1>
+</div>
+<div class="container">
+  <div class="card"></div>
+  <div class="card">
+    <h1 class="title">Enregister</h1>
+    <form>
+      <div class="input-container">
+        <input type="#{type}" id="#{label}" required="required"/>
+        <label for="#{label}">Adresse mail</label>
+        <div class="bar"></div>
+      </div>
+      <div class="input-container">
+        <input type="#{type}" id="#{label}" required="required"/>
+        <label for="#{label}"> Confirmer Adresse mail</label>
+        <div class="bar"></div>
+      </div>
+      <div class="input-container">
+        <input type="#{type}" id="#{label}" required="required"/>
+        <label for="#{label}">Mot de passe</label>
+        <div class="bar"></div>
+      </div>
+      <div class="input-container">
+        <input type="#{type}" id="#{label}" required="required"/>
+        <label for="#{label}"> Confirmer Mot de passe</label>
+        <div class="bar"></div>
+      </div>
+      <div class="button-container">
+        <button><span>Valider</span></button>
+      </div>
+    </form>
+  </div>
+     
+  <div class="card alt">
+ 
+    <div class="toggle"></div>
+    <h1 class="title">Connexion
+      <div class="close"></div>
+    </h1>
+    <form>
+       <div class="input-container">
+        <input type="#{type}" id="#{label}" required="required"/>
+        <label for="#{label}">Adresse mail</label>
+        <div class="bar"></div>
+      </div>
+      <div class="input-container">
+        <input type="#{type}" id="#{label}" required="required"/>
+        <label for="#{label}">Mot de passe</label>
+        <div class="bar"></div>
+      </div>
+      <div class="input-container">
+      <input type="checkbox" id="checkbox"/>
+          <label for="checkbox" ><span class="ui"></span>Keep me signed in</label>	  
+      </div>
+      <div class="button-container">
+        <button><span>Connexion</span></button>
+        <div class="footeri"><a href="#">Forgot your password?</a></div>
+      </div>
+    
+    </form>
+  </div>
+</div>
+
+<!-- Portfolio--><a id="portfolio" href="http://andytran.me/" title="View my portfolio!"><i class="fa fa-link"></i></a>
+<!-- CodePen--><a id="codepen" href="https://codepen.io/andytran/" title="Follow me!"><i class="fa fa-codepen"></i></a>
 

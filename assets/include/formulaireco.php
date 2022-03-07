@@ -1,6 +1,9 @@
 
-<div class="pen-title">
+<div id="pen-title">
   <h1>Connexion Metropolis</h1>
+</div>
+<div id="pen-title2">
+  <h1>Inscription Metropolis</h1>
 </div>
 <div class="container">
   <div class="card"></div>
@@ -23,7 +26,9 @@
       <div class="footer"><a href="#">Forgot your password?</a></div>
     </form>
   </div>
+     
   <div class="card alt">
+ 
     <div class="toggle"></div>
     <h1 class="title">Enregister
       <div class="close"></div>
