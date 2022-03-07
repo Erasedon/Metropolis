@@ -1,9 +1,12 @@
-<div style="overflow: hidden;height: 145vh;">
+<div style="overflow: hidden;height: 121vh;">
     <section id=2>
         <div id="textvideo">
                 <h1>Metropolis</h1>
             </div>
-        <div class=" shadow">
+
+            <div class=" shadow">
+            <div><img src="assets/img/fondnexflix.jpg"> </div>
+        <!-- 
                 <div class="gridimg imgcoter ">
                 <div class="div1 tailleaffiche "><a href="#4"></a> </div>
                 <div class="div2 tailleaffiche "> <a href="#4"> </a> </div>
@@ -28,6 +31,7 @@
                 <div class="div21 tailleaffiche"> <a href="#4"> </a> </div>
                 <div class="div22 tailleaffiche"> <a href="#4"> </a> </div>
             </div>
+         -->
         </div>
     </section>
 </div>
