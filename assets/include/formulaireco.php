@@ -20,10 +20,14 @@
         <label for="#{label}">Password</label>
         <div class="bar"></div>
       </div>
+      <div class="input-container">
+      <input type="checkbox" id="checkbox"/>
+          <label for="checkbox" ><span class="ui"></span>Rester connecter</label>	  
+      </div>
       <div class="button-container">
         <button><span>Connexion</span></button>
       </div>
-      <div class="footer"><a href="#">Forgot your password?</a></div>
+      <div class="footer"><a href="#">Vous avez oublié votre mot de passe ?</a></div>
     </form>
   </div>
      

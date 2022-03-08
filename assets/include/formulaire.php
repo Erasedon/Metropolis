@@ -55,17 +55,17 @@
       </div>
       <div class="input-container">
       <input type="checkbox" id="checkbox"/>
-          <label for="checkbox" ><span class="ui"></span>Keep me signed in</label>	  
+          <label for="checkbox" ><span class="ui"></span>Rester connecter</label>	  
       </div>
       <div class="button-container">
         <button><span>Connexion</span></button>
-        <div class="footeri"><a href="#">Forgot your password?</a></div>
+        <div class="footeri"><a href="#">Vous avez oublié votre mot de passe ?</a></div>
       </div>
     
     </form>
   </div>
 </div>
 
-<!-- Portfolio--><a id="portfolio" href="http://andytran.me/" title="View my portfolio!"><i class="fa fa-link"></i></a>
-<!-- CodePen--><a id="codepen" href="https://codepen.io/andytran/" title="Follow me!"><i class="fa fa-codepen"></i></a>
+<!-- Portfolio--><a id="portfolio" href="localhost/portfolio" title="View my portfolio!"><i class="fa fa-link"></i></a>
+<!-- CodePen--><a id="codepen" href="https://github.com/Erasedon/Metropolis" title="Follow me!"><i class="fa fa-codepen"></i></a>
 
