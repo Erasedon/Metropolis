@@ -1,4 +1,4 @@
-class carousel {
+class Carousel {
     /**
      * This callback type is called `requestCallback` and is displayed as a global symbol.
      *
@@ -72,7 +72,7 @@ class carousel {
     setStyle () {
       let ratio = this.items.length / this.slidesVisible
       this.container.style.width = (ratio * 100) + "%"
-      this.items.forEach(item => item.style.width = ((100 / this.slidesVisible) / ratio) + "%")
+      this.items.forEach(item => item.style.width = ((40 / this.slidesVisible) / ratio) + "%")
     }
   
     /**
@@ -205,21 +205,22 @@ class carousel {
     }
   
   }
-  
-  let onReady = function (i) {
 
-    var i=0;
-    
-    
-      new carousel(document.querySelector("#carousel1"), {
+  let onReady = function ( ) {
+ 
+    document.querySelectorAll(".carousel").forEach((c) => {
+      new Carousel(c, {
       slidesVisible: 2,
       slidesToScroll: 2,
       pagination: true,
       loop: true
+      
     })
+
+    });
      
-     var  i = i++;
-    console.log(i);
+   
+ 
  
   
   }
