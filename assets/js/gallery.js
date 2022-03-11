@@ -3,7 +3,7 @@ const galleryControlsContainer = document.querySelector('.gallery-controls');
 const galleryControls = ['precedent', 'ajouter', 'suivant'];
 const galleryItems = document.querySelectorAll('.gallery-item');
 
-class Carousel {
+class Carousel3d {
   constructor(container, items, controls) {
     this.carouselContainer = container;
     this.carouselControls = controls;
@@ -90,7 +90,7 @@ class Carousel {
   }
 }
 
-const exampleCarousel = new Carousel(galleryContainer, galleryItems, galleryControls);
+const exampleCarousel = new Carousel3d(galleryContainer, galleryItems, galleryControls);
 
 exampleCarousel.setControls();
 // exampleCarousel.setNav();
