@@ -25,6 +25,11 @@
     include "assets/include/divfilm.php";
 
     ?>
+        <?php 
+
+    include "assets/include/divacteur.php";
+
+    ?>
         <?php include 'assets/include/footer.php'?>
     </div>
 

@@ -226,7 +226,7 @@ class Carousel {
   }
   
   if (document.readyState !== 'loading') {
-    onReady()
+    console.log(onReady());
   }
   document.addEventListener('DOMContentLoaded', onReady)
   

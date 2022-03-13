@@ -16,7 +16,8 @@
     <?php include 'assets/include/navbar.php' ?> 
    
     </section>
-        <?php include 'assets/include/formulaireco.php'?>
+    
+    <?php include 'assets/include/formulaireco.php'?>
         <?php include 'assets/include/footer.php'?>
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>

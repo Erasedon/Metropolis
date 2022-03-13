@@ -27,7 +27,7 @@ foreach($row as $value){
   <h2 class='playlist'> <?php echo $nomcat ?>  </h2>
 
 <div class="carousel">
-   <?php if($nomcat == "Action"){ ?>
+   <?php //if($nomcat == "Action"){ ?>
       <div class="item"> 
         <div class="item__image"><a href="film.php?id=<?php  echo $id_visuel; ?>">
           <img src="<?php  print $img; ?>" alt=""></a>
@@ -45,7 +45,7 @@ foreach($row as $value){
           </div>
         </div>
        
-      </div><?php }?> 
+      </div> <?php// }?> 
       
 </div>
 

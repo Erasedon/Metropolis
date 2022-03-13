@@ -404,7 +404,6 @@ body {
 .separator {
   width: 100%;
   height: 5px;
-  margin: 60px 0;
   background-color: rgb(255, 123, 0);
 }
 
@@ -1228,7 +1227,7 @@ body {
   margin: 0 20px;
   padding: 0 12px;
   text-transform: capitalize;
-  color: #fff;
+  color: rgb(255, 123, 0);
 }
 
 .gallery-controls button:focus {
@@ -1240,7 +1239,7 @@ body {
 }
 
 .gallery-controls-precedent::before {
-  border: solid #fff;
+  border: solid rgb(255, 123, 0);
   border-width: 0 2px 2px 0;
   content: '';
   display: inline-block;
@@ -1263,7 +1262,7 @@ body {
 }
 
 .gallery-controls-suivant::before {
-  border: solid #fff;
+  border: solid rgb(255, 123, 0);
   border-width: 0 2px 2px 0;
   content: '';
   display: inline-block;
@@ -1431,6 +1430,7 @@ body {
   transform: scale(1.4);
 }
 .playlist{
+  margin-top: 20px;
   color:#fff;
 }
 @media screen and (min-width: 800px) {
@@ -1521,6 +1521,7 @@ footer ul {
 .titrefilm {
   font-size: 50px;
   margin-bottom: 20px;
+  color: whitesmoke;
   font-family: "Merriweather", serif;
 }
 
@@ -1641,3 +1642,14 @@ footer ul {
   margin-top: -1px;
 }
 /*rester connecter*/
+
+/*message d'erreur*/
+.messageerreur{
+  display: flex;
+  color:red;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  margin-bottom:20px;
+}
+/*message d'erreur*/ 

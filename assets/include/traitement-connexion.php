@@ -1,25 +1,25 @@
 <?php
   include 'connexion.php';
   
-    if(isset( $_POST['mail']) && isset( $_POST['mdp'])){
-        $mail = $_POST['mail']; 
-        $mdp = $_POST['mdp'];
+if(isset( $_POST['mail']) && isset( $_POST['mdp'])){
+        $mail = htmlspecialchars($_POST['mail']); 
+        $mdp = htmlspecialchars($_POST['mdp']);
 
-         echo "<p>".$mail.",".$mdp."</p>";
             $sql = "SELECT * FROM users WHERE email_users = ? AND mdp_users = ?"; 
             $prepare = $db->prepare($sql);   
             $prepare ->execute(array($mail, $mdp));
             $result = $prepare->fetch();
-
-    var_dump($mail, $mdp);
+           
    
     if($mail == $result['email_users'] && $mdp == $result['mdp_users'] ){
+        session_start();
+        $_SESSION['role'] = $result['id_users'];
         header("Location:../../connecter.php");
     }else{
-        header("Location:../../identifier.php?id=erreur");
+        header("Location:../../identifier.php?id=erconnexion");
        
     }
 }else{
-    echo "rien";
+    header("Location:../../identifier.php?id=ercont");
 }
 ?>

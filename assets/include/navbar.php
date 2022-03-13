@@ -7,7 +7,7 @@
        <a href="index.php"><img id="nav-logo" src="assets/img/logo.jpg" alt="Logo YP"></a>
          <div id="nav-links1">
            <ul>
-                <li><a href="inscription.php">Inscription</a></li>
+                <li><a href="inscription.php?id=#">Inscription</a></li>
             </ul>
         </div>
         <div id="nav-links2">
@@ -18,7 +18,8 @@
         <div id="nav-links"> 
             
             <ul>
-                <li><a href="identifier.php">S'identifier</a></li>
+                <li><?php $session ?></li>
+                <li><a href="identifier.php?id=#">S'identifier</a></li>
             </ul>
         </div>
 </nav>

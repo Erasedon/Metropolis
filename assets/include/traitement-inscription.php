@@ -28,12 +28,10 @@
                         ':mdp_users' => $mdp
                     )); 
                       $result = $prepare->fetchAll();
-                 
+            
                    header("Location:../../inscription.php?id=succesinscrit"); 
                   }else{
-                   header("Location:../../inscription.php?id=erreurexist");
-                 
-                  
+                   header("Location:../../inscription.php?id=erreurexist");  
                   }
 
       
