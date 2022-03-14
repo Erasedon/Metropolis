@@ -1,8 +1,5 @@
-<?php $s
-?>
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,11 +17,10 @@
     <?php include 'assets/include/navbar.php' ?> 
    
     </section>
-        <?php include 'assets/include/carousel3d.php' ?>
-      
+    
     <?php 
 
-    include "assets/include/carousel.php";
+    include "assets/include/tableaufilmadmin.php";
 
     ?>
         <?php include 'assets/include/footer.php'?>
