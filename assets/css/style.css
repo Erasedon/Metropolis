@@ -1173,7 +1173,7 @@ body {
   z-index: 0;
 }
 
-.gallery-item-1 {
+.gallery-item-3 {
   left: 15%;
   opacity: .4;
   transform: translateX(-50%);
@@ -1192,7 +1192,7 @@ body {
   transform: translateX(-50%);
 }
 
-.gallery-item-3 {
+.gallery-item-1  {
   height: 300px;
   opacity: 1;
   left: 50%;

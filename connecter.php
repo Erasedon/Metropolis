@@ -1,4 +1,9 @@
-<?php $s
+<?php 
+session_start();
+
+if( $_SESSION['role'] == 0 ){
+    header("Location:inscription.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -20,11 +25,13 @@
     <?php include 'assets/include/navbar.php' ?> 
    
     </section>
+
+
         <?php include 'assets/include/carousel3d.php' ?>
       
     <?php 
 
-    include "assets/include/carousel.php";
+    include 'assets/include/carousels_genres.php';
 
     ?>
         <?php include 'assets/include/footer.php'?>

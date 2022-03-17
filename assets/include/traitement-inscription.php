@@ -12,12 +12,7 @@
                   ':email_users' => $mail,
                   ':mdp_users' => $mdp
               ));  
-                while ( $result = $prepare->fetch() ) {
-                
-                  echo "$result";
-                     
-                }
-
+               
                    if($mail != $result['email_users']){
                     
                       $sql = "INSERT INTO users (pseudo_users, email_users, mdp_users) VALUES (:pseudo_users, :email_users, :mdp_users)"; 

@@ -81,7 +81,7 @@
       </div>
 	  
       <div class="button-container" >
-        <button type="Submit"id="submit" disabled><span>Valider</span></button>
+        <button type="Submit"id="submit" ><span>Valider</span></button>
       </div>
     </form>
   </div>

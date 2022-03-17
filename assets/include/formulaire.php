@@ -77,7 +77,7 @@
         <label for="checkbox"><span class="ui"></span>Rester connecter</label>
       </div>
       <div class="button-container">
-        <button id="submit" disabled><span>Connexion</span></button>
+        <button id="submit" ><span>Connexion</span></button>
         <div class="footeri"><a href="#">Vous avez oublié votre mot de passe ?</a></div>
       </div>
 
