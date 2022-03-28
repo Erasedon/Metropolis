@@ -25,17 +25,32 @@
         <div class="bar"></div>
       </div>
       <div class="input-container">
-        <input type="#{type}"  id="mdp1" onchange="DoubleCheck()" name="mdp"
+        <input type="password"  id="mdp1" onchange="DoubleCheck()" name="mdp"
           pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
         <label for="#{label}">Mot de passe </label>
         <div class="bar"></div>
       </div>
-      <div style=" align-items: center; display: flex; justify-content: center; color: red; margin: 0px 0 50px;">(minimum : 8 caractères, 1 majuscule, 1 minuscule, 1 chiffre)</div>
+      <div style=" align-items: center; display: flex; justify-content: center; color: red; margin: 0px 0 50px; font-size:16px;">(minimum : 8 caractères, 1 majuscule, 1 minuscule, 1 chiffre)</div>
       <div class="input-container">
-        <input type="#{type}"  id="mdp2" onchange="DoubleCheck()" name="mdp1" required="required" />
+        <input type="password"  id="mdp2" onchange="DoubleCheck()" name="mdp1" required="required" />
         <label for="#{label}"> Confirmer Mot de passe</label>
         <div class="bar"></div>
       </div>
+        <?php 
+    switch ($_GET['id']){
+        case "erreurexist":
+            echo "<p class='messageerreur'> Inscription impossible :<br> adresse mail existant</p>";
+            break;
+        case "succesinscrit":
+            echo "<p style='color: white'> Vous etes bien inscrit</p>";
+            break;
+        case "erreurm":
+          echo "pas de contenu dans les champs demander";
+          break;
+            case "#":
+            echo "<p style='display:none'>rien</p>";
+            break;
+        }?> 	  
       <div class="button-container">
       <button type="Submit"id="submit" ><span>Valider</span></button>
       </div>
@@ -56,7 +71,7 @@
         <div class="bar"></div>
       </div>
       <div class="input-container">
-        <input type="#{type}"  name="mdp" required="required" />
+        <input type="password"  name="mdp" required="required" />
         <label for="#{label}">Mot de passe</label>
         <div class="bar"></div>
       </div>
@@ -65,7 +80,7 @@
         <label for="checkbox"><span class="ui"></span>Rester connecter</label>
       </div>
       <div class="button-container">
-        <button id="submit" disabled><span>Connexion</span></button>
+        <button id="submit" ><span>Connexion</span></button>
         <div class="footeri"><a href="#">Vous avez oublié votre mot de passe ?</a></div>
       </div>
 

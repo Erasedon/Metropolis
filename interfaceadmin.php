@@ -1,7 +1,10 @@
-<?php session_start(); ?> 
+<?php session_start();
+if(($_SESSION['role'] > 2 )||(!isset($_SESSION['role']))){
+    header("Location:connecter.php");
+}
+    ?> 
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
-    <title>Film metropolis</title>
+    <title>Metropolis</title>
 </head>
 
 <body>
@@ -19,15 +22,10 @@
     <?php include 'assets/include/navbar.php' ?> 
    
     </section>
-        <?php include 'assets/include/gridfilm.php' ?>
+    
     <?php 
 
-    include "assets/include/divfilm.php";
-
-    ?>
-        <?php 
-
-    include "assets/include/divacteur.php";
+    include "assets/include/tableaufilmadmin.php";
 
     ?>
         <?php include 'assets/include/footer.php'?>

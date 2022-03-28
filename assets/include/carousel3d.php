@@ -3,6 +3,7 @@
  
     $envoim = $db->prepare("SELECT * FROM `audiovisuel`");
     $envoim->execute();
+
   
 
 ?>
@@ -21,7 +22,12 @@
       <img class="gallery-item gallery-item-<?php print $i;?>" src="<?php  print $img; ?>" data-index="<?php print $i;?>">
       <?php } ?>
     </div>
-    <div class="gallery-controls "></div>
+    <?php 
+          $row1 = $envoim->fetch();
+      if((isset($_SESSION['role'])) == '3'){
+                   echo "<div class='gallery-controls '></div>";
+                } ?>
+
   </div>
   <div class="separator"></div>
   </section>

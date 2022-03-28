@@ -8,7 +8,7 @@
 <div class="container">
   <div class="card"></div>
   <div class="card">
-    <h1 class="title">Connexion</h1>
+    <h1 class="title">Connexion</h1>  
     <form method="post" action="assets/include/traitement-connexion.php">
       <div class="input-container">
         <input type="#{type}"  name="mail" required="required"/>
@@ -16,13 +16,26 @@
         <div class="bar"></div>
       </div>
       <div class="input-container">
-        <input type="#{type}" name="mdp" required="required"/>
+        <input type="password" name="mdp" required="required"/>
         <label for="#{label}">Password</label>
         <div class="bar"></div>
-      </div>
+      </div> 
+      <?php 
+    switch ($_GET['id']){
+        case "erconnexion":
+            echo "<p class='messageerreur'> Connexion impossible :<br> Email ou Mot de passe oublié</p>";
+            break;
+        case "ercont":
+            echo "<p style='color: white'> Erreur est le contenu </p>";
+            break;
+            case "#":
+            echo "<p style='display:none'>rien</p>";
+            break;
+        }?> 	  
       <div class="input-container">
       <input type="checkbox" id="checkbox"/>
-          <label for="checkbox" ><span class="ui"></span>Rester connecter</label>	  
+          <label for="checkbox" ><span class="ui"></span>Rester connecter</label>
+       
       </div>
       <div class="button-container">
         <button><span>Connexion</span></button>
@@ -54,7 +67,7 @@
         <div class="bar"></div>
       </div>
       <div class="input-container">
-        <input type="#{type}"  id="mdp1" onchange="DoubleCheck()" name="Mdp1" required="required"/>
+        <input type="password"  id="mdp1" onchange="DoubleCheck()" name="Mdp1" required="required"/>
         <label for="#{label}">Mot de passe</label>
         <div class="bar"></div>
      
@@ -62,13 +75,13 @@
        <div class="input-container"style=" align-items: center; display: flex; justify-content: center; color: red; margin: 0px 0 50px;">(minimum : 8 caractères, 1 majuscule, 1 minuscule, 1 chiffre)</div>
       
       <div class="input-container">
-        <input type="#{type}"  id="mdp2" onchange="DoubleCheck()" name="Mdp2" required="required"/>
+        <input type="password"  id="mdp2" onchange="DoubleCheck()" name="Mdp2" required="required"/>
         <label for="#{label}"> Confirmer Mot de passe</label>
         <div class="bar"></div>
       </div>
 	  
       <div class="button-container" >
-        <button type="Submit"id="submit" disabled><span>Valider</span></button>
+        <button type="Submit"id="submit" ><span>Valider</span></button>
       </div>
     </form>
   </div>
