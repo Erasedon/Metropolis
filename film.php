@@ -1,4 +1,10 @@
-<?php session_start(); ?> 
+<?php
+session_start();
+
+if( $_SESSION['role'] == 0 ){
+    header("Location:inscription.php");
+}
+?> 
 <!DOCTYPE html>
 <html lang="fr">
 
