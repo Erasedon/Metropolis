@@ -1,4 +1,8 @@
-<?php session_start(); ?> 
+<?php session_start();
+if(($_SESSION['role'] > 2 )||(!isset($_SESSION['role']))){
+    header("Location:connecter.php");
+}
+    ?> 
 <!DOCTYPE html>
 <html lang="fr">
 <head>

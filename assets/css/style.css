@@ -681,13 +681,11 @@ body {
 
 #textvideo {
   position: absolute;
-  color: rgb(255, 102, 0);
   place-content: center;
-  font-size: 100%;
+
   height: 100%;
   display: grid;
   width: 100%;
-  font-family: "Merriweather", serif;
   z-index: 999;
 }
 
@@ -1521,7 +1519,7 @@ footer ul {
 .titrefilm {
   font-size: 50px;
   margin-bottom: 20px;
-  color: whitesmoke;
+  color: rgb(255, 102, 0);
   font-family: "Merriweather", serif;
 }
 

@@ -25,25 +25,28 @@
         <div class="bar"></div>
       </div>
       <div class="input-container">
-        <input type="#{type}"  id="mdp1" onchange="DoubleCheck()" name="mdp"
+        <input type="password"  id="mdp1" onchange="DoubleCheck()" name="mdp"
           pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
         <label for="#{label}">Mot de passe </label>
         <div class="bar"></div>
       </div>
       <div style=" align-items: center; display: flex; justify-content: center; color: red; margin: 0px 0 50px; font-size:16px;">(minimum : 8 caractères, 1 majuscule, 1 minuscule, 1 chiffre)</div>
       <div class="input-container">
-        <input type="#{type}"  id="mdp2" onchange="DoubleCheck()" name="mdp1" required="required" />
+        <input type="password"  id="mdp2" onchange="DoubleCheck()" name="mdp1" required="required" />
         <label for="#{label}"> Confirmer Mot de passe</label>
         <div class="bar"></div>
       </div>
         <?php 
     switch ($_GET['id']){
-        case "erconnexion":
-            echo "<p class='messageerreur'> Connexion impossible :<br> Email ou Mot de passe oublié</p>";
+        case "erreurexist":
+            echo "<p class='messageerreur'> Inscription impossible :<br> adresse mail existant</p>";
             break;
-        case "ercont":
-            echo "<p style='color: white'> Erreur est le contenu </p>";
+        case "succesinscrit":
+            echo "<p style='color: white'> Vous etes bien inscrit</p>";
             break;
+        case "erreurm":
+          echo "pas de contenu dans les champs demander";
+          break;
             case "#":
             echo "<p style='display:none'>rien</p>";
             break;
