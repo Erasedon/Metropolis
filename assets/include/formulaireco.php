@@ -16,7 +16,7 @@
         <div class="bar"></div>
       </div>
       <div class="input-container">
-        <input type="#{type}" name="mdp" required="required"/>
+        <input type="password" name="mdp" required="required"/>
         <label for="#{label}">Password</label>
         <div class="bar"></div>
       </div> 
@@ -67,7 +67,7 @@
         <div class="bar"></div>
       </div>
       <div class="input-container">
-        <input type="#{type}"  id="mdp1" onchange="DoubleCheck()" name="Mdp1" required="required"/>
+        <input type="password"  id="mdp1" onchange="DoubleCheck()" name="Mdp1" required="required"/>
         <label for="#{label}">Mot de passe</label>
         <div class="bar"></div>
      
@@ -75,7 +75,7 @@
        <div class="input-container"style=" align-items: center; display: flex; justify-content: center; color: red; margin: 0px 0 50px;">(minimum : 8 caractères, 1 majuscule, 1 minuscule, 1 chiffre)</div>
       
       <div class="input-container">
-        <input type="#{type}"  id="mdp2" onchange="DoubleCheck()" name="Mdp2" required="required"/>
+        <input type="password"  id="mdp2" onchange="DoubleCheck()" name="Mdp2" required="required"/>
         <label for="#{label}"> Confirmer Mot de passe</label>
         <div class="bar"></div>
       </div>

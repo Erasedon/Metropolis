@@ -71,7 +71,7 @@
         <div class="bar"></div>
       </div>
       <div class="input-container">
-        <input type="#{type}"  name="mdp" required="required" />
+        <input type="password"  name="mdp" required="required" />
         <label for="#{label}">Mot de passe</label>
         <div class="bar"></div>
       </div>
