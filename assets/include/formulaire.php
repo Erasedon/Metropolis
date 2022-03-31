@@ -25,16 +25,14 @@
         <div class="bar"></div>
       </div>
       <div class="input-container">
-        <input type="password"  id="mdp1" name="mdp"/>
-        <!-- <input type="password"  id="mdp1" onchange="DoubleCheck()" name="mdp"
-          pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" /> -->
+        <input type="password"  id="mdp1" onchange="DoubleCheck()" name="mdp"
+          pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
         <label for="#{label}">Mot de passe </label>
         <div class="bar"></div>
       </div>
       <div style=" align-items: center; display: flex; justify-content: center; color: red; margin: 0px 0 50px; font-size:16px;">(minimum : 8 caractères, 1 majuscule, 1 minuscule, 1 chiffre)</div>
       <div class="input-container">
-        <input type="password"  id="mdp2" />
-        <!-- <input type="password"  id="mdp2" onchange="DoubleCheck()" name="mdp1" required="required" /> -->
+      <input type="password"  id="mdp2" onchange="DoubleCheck()" name="mdp1" required="required" />
         <label for="#{label}"> Confirmer Mot de passe</label>
         <div class="bar"></div>
       </div>
