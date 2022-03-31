@@ -22,13 +22,16 @@
       </div> 
       <?php 
     switch ($_GET['id']){
-        case "erconnexion":
+        case "ermailmdp":
             echo "<p class='messageerreur'> Connexion impossible :<br> Email ou Mot de passe oublié</p>";
             break;
-        case "ercont":
-            echo "<p style='color: white'> Erreur est le contenu </p>";
-            break;
-            case "#":
+            case "erexistpas":
+              echo "<p style='color: white; justify-content: center'> Vous etes pas inscrit ou vous n'etes pas valider </p>";
+              break;
+              case "ncompris":
+                  echo "<p style='color: white'> Erreur est le contenu </p>";
+                  break;
+              case !isset($_GET['id']):
             echo "<p style='display:none'>rien</p>";
             break;
         }?> 	  
@@ -79,7 +82,21 @@
         <label for="#{label}"> Confirmer Mot de passe</label>
         <div class="bar"></div>
       </div>
-	  
+      <?php 
+    switch ($_GET['id']){
+        case "erreurexist":
+            echo "<p class='messageerreur'> Inscription impossible :<br> adresse mail existant</p>";
+            break;
+        case "succesinscrit":
+            echo "<p style='color: white; justify-content: center'> Vous etes bien inscrit</p>";
+            break;
+        case "erreurm":
+          echo "pas de contenu dans les champs demander";
+          break;
+          case !isset($_GET['id']):
+            echo "<p style='display:none'>rien</p>";
+            break;
+        }?> 	  
       <div class="button-container" >
         <button type="Submit"id="submit" ><span>Valider</span></button>
       </div>

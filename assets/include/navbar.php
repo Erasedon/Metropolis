@@ -13,7 +13,7 @@
                 <a href='index.php'><img id='nav-logo' src='assets/img/logo.jpg' alt='Logo YP'></a>
                 <div id='nav-links1'>
                 <ul>
-                <li><a href='compte.php'> ",$_SESSION['pseudo'] ,"</a></li>
+                <li><a href='compte.php'>",$_SESSION['pseudo'] ,"</a></li>
                     </ul>
                     </div> 
                 <div id='nav-links2'>
@@ -40,7 +40,7 @@
                     <a href='index.php'><img id='nav-logo' src='assets/img/logo.jpg' alt='Logo YP'></a>
                     <div id='nav-links1'>
                     <ul>
-                    <li><a href='compte.php'> ",$_SESSION['pseudo'] ,"</a></li>
+                    <li><a href='compte.php'> Bienvenue ",$_SESSION['pseudo'] ,"</a></li>
                     <li><a href='interfaceadmin.php'> Interface de Moderation  </a></li>
                         </ul>
                         </div> 
@@ -67,7 +67,7 @@
             <a href='index.php'><img id='nav-logo' src='assets/img/logo.jpg' alt='Logo YP'></a>
                 <div id='nav-links1'>
                 <ul>
-                        <li><a href='inscription.php?id=#'>Inscription</a></li>
+                        <li><a href='inscription.php'>Inscription</a></li>
                     </ul>
                 </div>
                 <div id='nav-links2'>
@@ -76,7 +76,7 @@
                     </ul>
                 </div>
                 <div id='nav-links'> 
-                    <ul><li> <a href='identifier.php?id=#'>S'identifier</a></li>
+                    <ul><li> <a href='identifier.php'>S'identifier</a></li>
                                 </ul>
                             </div>
                     </nav>";
