@@ -95,7 +95,7 @@
       </div>
       <div class="button-container">
         <button id="submit" ><span>Connexion</span></button>
-        <div class="footeri"><a href="#">Vous avez oublié votre mot de passe ?</a></div>
+        <div class="footeri"><a href="reset.php">Vous avez oublié votre mot de passe ?</a></div>
       </div>
 
     </form>

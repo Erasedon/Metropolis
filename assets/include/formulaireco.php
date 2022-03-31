@@ -32,6 +32,12 @@
                       case "ncompris":
                           echo "<p style='color: white'> Erreur est le contenu </p>";
                           break;
+                          case "demm":
+                            echo "<p class='messageerreur'>Votre demande de reinitiation de votre mot de passe est bien prit en compte </p>";
+                            break;
+                            case "erchangmdp":
+                              echo "<p class='messageerreur'>Votre demande de reinitiation de votre mot de passe à expirer</p>";
+                              break;
                 }
         }
         ?> 	  
@@ -43,7 +49,7 @@
       <div class="button-container">
         <button><span>Connexion</span></button>
       </div>
-      <div class="footer"><a href="#">Vous avez oublié votre mot de passe ?</a></div>
+      <div class="footer"><a href="reset.php">Vous avez oublié votre mot de passe ?</a></div>
     </form>
   </div>
      
@@ -94,6 +100,7 @@
                           case "erreurm":
                             echo "pas de contenu dans les champs demander";
                             break;
+                           
                           }  
               }?> 	  
       <div class="button-container" >
