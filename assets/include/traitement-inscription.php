@@ -50,7 +50,7 @@ use PHPMailer\PHPMailer\PHPMailer;
         </head>
         <body>
         <H1>Felicitations voici l'étape final</H1>
-        <p><a href='https://yanis.simplon-charleville.fr/Metropolis/assets/include/activation.php?C=$token'> cliquer ici </a></p>
+        <p><a href='http://localhost/Metropolis/assets/include/activation.php?C=$token'> cliquer ici </a></p>
         </body>
       </html>
       ";

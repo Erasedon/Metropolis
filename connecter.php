@@ -3,7 +3,7 @@ session_start();
 
 if( $_SESSION['role'] == 0 || $_SESSION['activer'] == 0){
     session_destroy(); 
-    header("Location:idenrifier.php?id=erreurval");
+    header("Location:identifier.php?id=erreurval");
 }
 ?>
 <!DOCTYPE html>
