@@ -17,14 +17,13 @@
             $interval = $dateToken->diff($now)->format('%i');
             // die(var_dump($interval->format('%i')));
 
-            if($interval > $vieToken)
-              header("Location:../../changementmdp.php");
-            }else{ 
-                
+            if($interval > $vieToken){
                 header("Location:../../identifier.php?id=erchangmdp");
+            }else{ 
+                header("Location:../../changementmdp.php?reset=$token");
             }
 
-
+        }
 
     }
 

@@ -1,3 +1,4 @@
+<?php $token = isset($_GET['reset']); ?>
 <div id="pen-title">
     <h1>Changement de Mot de passe</h1>
 </div>
@@ -5,7 +6,7 @@
     <div class="card"></div>
     <div class="card">
         <h1 class="title">Voici la derniere étape pour réinitialiser votre Mot de passe</h1>
-        <form method="post" action="assets/include/traitement_reset.php">
+        <form method="post" action="assets/include/traitement_changemdp.php?reset=<?php echo $token;?>">
             <div class="input-container">
                 <input type="password" id="mdp1" onchange="DoubleCheck()" name="mdp"
                     pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
@@ -20,7 +21,11 @@
                 <label for="#{label}"> Confirmer Mot de passe</label>
                 <div class="bar"></div>
             </div>
-
+      <?php      if(isset($_GET['id'])){
+                    switch ($_GET['id']){
+                      case "envoimail":
+                        echo "<p class='messageerreur'> Mot de passe modifier avec succes :<br> vous avez reçu un mail pour vous connecter</p>";
+                        break;}} ?>
             <div class="button-container">
                 <button><span>confirmation</span></button>
             </div>
